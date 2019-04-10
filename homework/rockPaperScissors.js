@@ -1,5 +1,5 @@
 const player1 = 'Leah'
-const player2 = 'Jack'
+const player2 = 'Lola'
 let player1wins = 0
 let player2wins = 0
 

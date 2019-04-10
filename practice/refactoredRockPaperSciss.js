@@ -54,7 +54,7 @@ function playGame(playerA, playerB, playUntil) {
         playerRound(playerA, playerB);
     }
 }
-// SEE ANSWER ON REPO???? lines 44 and 47!
+// SEE ANSWER ON REPO???? lines 44 and 47! See Jimmy's answer 
 
 let winner;
 if (player1wins === 3) {
