@@ -51,10 +51,10 @@ console.log(course.preReqs.equipment.OSOptions[1]);
 const courseJoining = course.preReqs.equipment.OSOptions;
 console.log(courseJoining.join(' or '));
 //get array of all the students that are using OSX
-//HELPPPPP
-if(course.students.computer.OS === 'OSX'){
-    console.log('hi');
-}
+const osUsers = [];
+	if(course.students.computer.OS === 'OSX'){
+		osUsers.push(course.students.name);
+	}
 
 // create an object mimicking Gmail
 const email = {
