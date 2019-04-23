@@ -36,7 +36,7 @@ function playRound(playerOne, playerTwo) {
     console.log(playerTwo.name, " plays", playerTwoWeapon);
 
     if (playerOneWeapon === playerTwoWeapon) {
-        //Players Tied
+        // Players Tied
         return null;
         // confused with how we're calleding winConditions
     } else if (winConditions[playerOneWeapon] === playerTwoWeapon) {
@@ -48,19 +48,23 @@ function playRound(playerOne, playerTwo) {
     }
 }
 
+// confused with this arrow function
+const hasPlayerWon = (player, roundsToWin) => player.score >= roundsToWin;
+
 function playGame(playerA, playerB, playUntil) {
     // play rounds until one player has won a certain amount of times over the other player
     while ( player1.score < playUntil && player2.score < playUntil) {
         playerRound(playerA, playerB);
     }
-}
 // SEE ANSWER ON REPO???? lines 44 and 47! See Jimmy's answer 
 
 let winner;
-if (player1wins === 3) {
-    winner = player1;
-} else {
-    winner = player2;
+    if (hasPlayerWon(playerOne, roundsToWin)) {
+    winner = playerOne;
+    } else {
+    winner = playerTwo;
+    }
+console.log(winner.name, "wins the game!");
 }
 
-console.log();
+console.log(playGame(player1, player2, 5));
