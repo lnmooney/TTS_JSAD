@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="form.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide();
+  });
+});
+</script>
+</head>
+<body>
+    <h2>Patient Information</h2>
+        <p>Name</p>
+            <form action="/action_page.php">
+                First name: <input type="text" name="fname"><br>
+                Last name: <input type="text" name="lname"><br>
+            </form>
+
+        <p>Contact Information</p>
+            <form action="/action_page.php">
+                Email: <input type="text" name="email"><br>
+                Phone Number: <input type="text" name="email"><br>
+            </form>
+
+<button>Hide Unnecessary Text</button>
+
+</body>
+</html>
